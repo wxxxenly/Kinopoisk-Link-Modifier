@@ -1,0 +1,62 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 10px; /* Внутренние отступы */
+    box-sizing: border-box;
+    width: 350px; /* Фиксированная ширина */
+    height: 250px; /* Фиксированная высота */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Отключаем прокрутку */
+}
+
+/* Стили для заголовка */
+h1 {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 10px 0; /* Отступ после заголовка */
+    text-align: center; /* Центрируем текст */
+}
+
+/* Стили для поля ввода */
+#customLink {
+    width: 100%; /* Поле занимает всю доступную ширину */
+    max-width: 300px; /* Ограничение максимальной ширины */
+    padding: 10px 15px; /* Внутренние отступы */
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 25px; /* Закругленные углы */
+    outline: none; /* Убираем контур при фокусе */
+    transition: border-color 0.3s ease; /* Плавный переход цвета границы */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+    margin-bottom: 15px; /* Отступ под полем ввода */
+}
+
+#customLink:focus {
+    border-color: #7b68ee; /* Изменяем цвет границы при фокусе */
+}
+
+/* Стили для кнопки */
+#replaceCustomButton {
+    width: 100%; /* Кнопка занимает всю доступную ширину */
+    max-width: 300px; /* Ограничение максимальной ширины */
+    padding: 10px 20px; /* Внутренние отступы */
+    font-size: 14px;
+    color: white;
+    background-color: #7b68ee; /* Фиолетовый цвет */
+    border: none;
+    border-radius: 25px; /* Закругленные углы */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Анимация */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+#replaceCustomButton:hover {
+    background-color: #6a5acd; /* Переливающийся эффект */
+    transform: scale(1.05); /* Немного увеличивается при наведении */
+}
